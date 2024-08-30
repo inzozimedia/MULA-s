@@ -111,18 +111,6 @@
             transform: scale(1.1); /* Slightly enlarge button on hover */
         }
 
-        @media (max-width: 768px) {
-            .grid {
-                grid-template-columns: 1fr;
-                width: 100%; /* Full width on small screens */
-            }
-
-            .grid img {
-                height: auto; /* Allow height to adjust on smaller screens */
-                margin-bottom: 10px;
-            }
-             }
-
         /* Ad iframe styles */
         .ad-container {
             position: fixed;
@@ -138,6 +126,68 @@
             height: 100%;
             border: none;
         }
+
+        /* Media queries for mobile responsiveness */
+        @media (max-width: 768px) {
+            header {
+                height: 60px; /* Reduced header height */
+                padding: 10px;
+            }
+
+            .header-content h1 {
+                font-size: 1.8em; /* Adjusted font size */
+            }
+
+            .small-title {
+                font-size: 0.7em;
+                right: 10px;
+            }
+
+            main {
+                padding: 10px;
+                gap: 15px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+                width: 100%; /* Full width on small screens */
+            }
+
+            .grid img {
+                height: auto; /* Allow height to adjust on smaller screens */
+                margin-bottom: 10px;
+            }
+
+            .grid-button {
+                padding: 10px; /* Slightly larger buttons on mobile */
+                font-size: 1em;
+            }
+
+            .ad-container {
+                width: 100px; /* Adjusted width for mobile screens */
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-content h1 {
+                font-size: 1.5em; /* Further reduced font size */
+            }
+
+            .grid {
+                padding: 10px;
+                width: 100%;
+            }
+
+            .grid-button {
+                padding: 8px; /* Smaller button for very small screens */
+                font-size: 0.9em;
+            }
+
+            .ad-container {
+                width: 80px; /* Adjusted width for very small screens */
+                height: 300px;
+            }
         }
     </style>
 </head>
@@ -152,7 +202,7 @@
         <div class="grid">
             <img src="image/cpm.PNG" alt="Square Image 1">
             <div class="grid-text">
-                <p>CPMlink is a secure website where you may earn money through bitcoin,paypal,... SO,click 'START now! to earn $$$'</p>
+                <p>CPMlink is a secure website where you may earn money through bitcoin, paypal, ... SO, click 'START now!' to earn $$$'</p>
                 <button class="grid-button" onclick="openLink('https://cpmlink.net/?ref=x9gBAA')">START now!</button>
             </div>
         </div>
@@ -166,7 +216,7 @@
         <div class="grid">
             <img src="image/ad.PNG" alt="Square Image 3">
             <div class="grid-text">
-                <p>Earn satoshis by only visiting 15 secs in sites and other options like watching videos.(in the withdraw process satoshis are converted into bitcoin and you may use other methods)</p>
+                <p>Earn satoshis by only visiting sites for 15 secs and other options like watching videos. (In the withdrawal process, satoshis are converted into bitcoin and you may use other methods)</p>
                 <button class="grid-button" onclick="openLink('https://r.adbtc.top/3853240')">START now!</button>
             </div>
         </div>
@@ -175,7 +225,7 @@
             <img src="https://adbtc.top/promo/banner_468x60.jpg" alt="Ad Banner"/>
         </a>
     </main>
-     <div class="ad-container">
+    <div class="ad-container">
         <a href="https://click.traffprogo7.com/uOPUtUJn" target="_blank"></a>
         <iframe scrolling="no" frameborder="0" src="https://cdn.alanbase.com/storage/promo/FEYoIftNmuAREDrgngN8BCRRVcqnuzS1khnVHzmV.jpg"></iframe>
     </div>
